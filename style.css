@@ -1,4 +1,18 @@
 h1{
     text-align: center;
-    color: magenta;
+    color: #FCB05B;
 }
+
+.hero-img {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  form {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  
+  
