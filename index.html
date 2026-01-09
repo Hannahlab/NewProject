@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>NEW YEAR, NEW GOALS!!!</h1>
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/209/original/new-year-banner-with-fireworks.jpg?1767800324"  alt="2026 New Year picture" class="hero-img">
-    <h2>Set your intention for 2026 ✨</h2>
-    <form>
-      <form>
-        <input type="text" placeholder="Your name" />
-        <input type="email" placeholder="Your email" />
-        <input type="text" placeholder="Your main goal for 2026" />
-        <input type="submit" value="Start My 2026 Journey 🚀" />
-      </form>
-      
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Year New Goals 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Image -->
+  <div class="hero">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/209/original/new-year-banner-with-fireworks.jpg?1767800324" alt="New Year 2026" />
+  </div>
+
+  <!-- Heading -->
+  <h1>New Year, New Goals 2026</h1>
+
+  <!-- Form -->
+  <form id="goalForm">
+    <input type="text" id="name" placeholder="Enter your name" required />
+    <input type="text" id="goal" placeholder="My goal for 2026" required />
+    <input type="submit" value="Start Journey" />
+  </form>
+
+  <!-- Success Message -->
+  <div id="successMessage" class="hidden">
+    🎉 Congratulations! Your 2026 journey has started.
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

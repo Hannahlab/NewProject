@@ -3,16 +3,80 @@ h1{
     color: #FCB05B;
 }
 
-.hero-img {
-    width: 500px;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  form {
-    margin-top: 60px;
+h2{
     text-align: center;
-  }
-  
-  
-  
+}
+/* Hero Image */
+.hero {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hero img {
+  width: 100%;           /* fills container width */
+  max-width: 800px;      /* prevents it from being too wide */
+  height: auto;          /* maintains aspect ratio */
+  border-radius: 12px;
+  display: block;        /* removes extra bottom space */
+  margin: 0 auto;        /* centers image */
+}
+
+ /* Form container */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background-color: #f0f0f0;
+  padding: 18px;
+  border-radius: 10px;
+  width: 280px;
+  margin: 20px auto;
+}
+
+/* Input fields */
+form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  width: auto;
+  min-width: 150px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fcb05b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s, width 0.3s;
+}
+
+/* Hover effect: expand and show full text */
+form input[type="submit"]:hover {
+  background-color: #e89a3f;
+  width: 220px;
+}
+
+/* Success message */
+.hidden {
+  display: none;
+}
+
+#successMessage {
+  text-align: center;
+  background-color: #fcb05b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 280px;
+  margin: 20px auto;
+}
